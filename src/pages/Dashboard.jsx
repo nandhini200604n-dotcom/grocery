@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 function Dashboard() {
 
-  const API_URL = "http://127.0.0.1:5000";
+  const API_URL = "http://127.0.0.1:5003";
 
   const [totalProducts, setTotalProducts] = useState(0);
   const [totalOrders, setTotalOrders] = useState(0);

@@ -4,7 +4,7 @@ import "../styles/Sales.css";
 
 function Sales() {
 
-  const API_URL = "http://127.0.0.1:5000";
+  const API_URL = "http://127.0.0.1:5003";
   console.log(API_URL);
 
   const [productsData, setProductsData] = useState([]);

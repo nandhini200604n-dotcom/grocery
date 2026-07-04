@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 import "../styles/Inventory.css";
 
 function Inventory() {
-  const API_URL = "http://127.0.0.1:5000";
+  const API_URL = "http://127.0.0.1:5003";
 
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
