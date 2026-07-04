@@ -19,5 +19,5 @@ register_inventory_routes(app)
 register_sales_routes(app)
 register_stockdetails_routes(app)
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0", port=5003, debug=True)
     
