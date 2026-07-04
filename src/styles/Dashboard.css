@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+}
+
+.container{
+    display:flex;
+}
+
+.main-content{
+    flex:1;
+    padding:30px;
+}
+
+.header h1{
+    color:#0f172a;
+    margin-bottom:25px;
+}
+
+/* Welcome Card */
+
+.welcome-card{
+    background:#ede9fe;
+    border-radius:20px;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.welcome-card h2{
+    font-size:32px;
+    color:#1e293b;
+}
+
+.welcome-card p{
+    margin-top:10px;
+    color:#475569;
+}
+
+.welcome-card img{
+    width:180px;
+    height:auto;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:25px;
+}
+
+.card{
+    padding:25px;
+    border-radius:15px;
+    color:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:white;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.card h1{
+    color:white;
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:white;
+    opacity:0.9;
+}
+
+/* Card Colors */
+
+.products{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+}
+
+.sales{
+    background:linear-gradient(135deg,#10b981,#059669);
+}
+
+.stock{
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+}
+
+/* Bottom Section */
+
+.bottom-section{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    margin-top:25px;
+}
+
+.overview{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.overview h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.overview p{
+    margin:15px 0;
+    color:#475569;
+    font-size:18px;
+}
+
+.overview span{
+    font-weight:bold;
+    color:#2563eb;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .welcome-card{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .welcome-card img{
+        width:140px;
+    }
+
+}
+.card.stock{
+    background: linear-gradient(135deg,#f59e0b,#ea580c);
+    color: white;
+}
+.card.sales{
+    background: linear-gradient(135deg,#f59e0b,#ea580c);
+}
